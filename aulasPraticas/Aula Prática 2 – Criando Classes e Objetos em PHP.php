@@ -7,6 +7,6 @@
     <title>Criando Classes e Objetos em PHP</title>
 </head>
 <body>
-    
+
 </body>
 </html>
