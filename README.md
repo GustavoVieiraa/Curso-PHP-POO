@@ -1,2 +1,2 @@
 # Curso-PHP-POO
-Curso de PHP
+Curso de PHP Orientado a objeto.
