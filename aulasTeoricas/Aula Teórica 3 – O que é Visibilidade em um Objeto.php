@@ -12,7 +12,7 @@
         <h1>O que é Visibilidade em um Objeto?</h1>
         <p>Modificadores de Visibilidade - Indicam o nível de acesso aos componentes internos de uma classe.</p>
         <ul>
-            <li>+ PUBLICA - A classe atual e todas as outras classes.</li>
+            <li>+ PUBLICA - A classe atual e todas as outras classes.</li>f
             <li>- PRIVADO - Somente a classe atual pode alterar.</li>
             <li># PROTEGIDO - A classe atual e todas as suas sub-classes.</li>
         </ul>
