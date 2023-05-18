@@ -1,15 +1,13 @@
 <?php
 
-
-
 class Caneta {
-    var $modelo;
-    var $cor;
-    var $ponta;
-    var $carga;
-    var $tampada;
+    public $modelo;
+    public $cor;
+    private $ponta;
+    protected $carga;
+    protected $tampada;
 
-    function rabiscar() {
+    public function rabiscar() {
         if ($this->tampada == true) {
             echo "<p>ERRO! Não é possível rabiscar! Sua caneta está tampada.";
         } else {
@@ -18,17 +16,17 @@ class Caneta {
         
     }
 
-    function eNova() {
+    private function eNova() {
         if ($this->carga == 100) {
             echo "Caneta nova!";
         }
     }
 
-    function tampar() {
+    public function tampar() {
         $this->tampada = true;
     }
 
-    function destampar() {
+    public function destampar() {
         $this->tampada = false;
     }
 }
