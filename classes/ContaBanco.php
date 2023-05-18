@@ -1,6 +1,7 @@
 <?php 
 
 class ContaBanco {
+    // Atributos
     public $numConta;
     protected $tipoConta;
     private $saldo;
@@ -36,6 +37,8 @@ class ContaBanco {
                     echo "<h1 style='color: red;'>Você não possui saldo para realizar esse saque.</h1>";
                 }
             }
+        } else {
+            echo "<h1 style='color: red;'>Você não possui uma conta.</h1>";
         }
     }
 
