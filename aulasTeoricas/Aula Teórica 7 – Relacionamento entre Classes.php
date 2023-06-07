@@ -18,14 +18,23 @@
         $listaLutadores = [
             $lutadorGusta = new Lutador("Gustavo", "Brasileiro", 20, 1.72, 75, 0, 0, 0),
             $lutadorJonata = new Lutador("Jonata", "Russo", 23, 1.80, 60, 0, 0, 0),
-            $lutadorBeto = new Lutador("Beto", "Colombiano", 27, 1.74, 120, 0, 0, 0)
-        ];    
-
-        $listaLutadores[0]->apresentar();
-        $listaLutadores[1]->apresentar();
-        $listaLutadores[2]->apresentar();
+            $lutadorBeto = new Lutador("Beto", "Colombiano", 27, 1.74, 120, 0, 0, 0),
+            $lutadorRicardo = new Lutador("Ricardo", "Argentino", 59, 1.89, 88, 0, 0, 0,)
+        ];   
+   
         # Chamada de functions/metodos
+        for ($c=0;$c<100230;$c++) {
+            $listaLutadores[0]->ganharLuta();
+            if ($c > 100000) {
+        }
 
+        for ($key=0;$key<count($listaLutadores);$key++) {
+            $listaLutadores[$key]->apresentar();
+        }             $listaLutadores[0]->perderLuta();
+            }
+            if ($c > 50420) {
+                $listaLutadores[0]->empatarLuta();
+            }
 
         ?>
 

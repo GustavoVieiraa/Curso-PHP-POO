@@ -33,11 +33,14 @@
         }
 
         public function status() {
-            echo "$this->nome<br>
+            echo "
+            <br>=-------------- STATUS --------------=<br> 
+            $this->nome<br>
             é um peso, <strong>$this->categoria</strong> <br>
             $this->vitorias - Vitorias <br>
             $this->derrotas - Derrotas <br>
-            $this->empates - Empates";
+            $this->empates - Empates
+            <br>=------------------------------=<br>";
         }
 
         public function ganharLuta() {
@@ -100,13 +103,15 @@
         }
         public function setCategoria($peso) {
             if ($peso<52.2) {
-                $this->categoria = 'invalido!';
+                $this->categoria = 'invalido';
             } else if ($peso<=70.3) {
                 $this->categoria = 'leve';
             } else if ($peso<=83.9) {
                 $this->categoria = 'medio';
             } else if ($peso<=120.2) {
-                $this->categoria = 'pesado!';
+                $this->categoria = 'pesado';
+            } else {
+                $this->categoria = 'invalido';
             }
         }
 
