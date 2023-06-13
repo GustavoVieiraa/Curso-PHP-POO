@@ -1,10 +1,6 @@
 <?php
 
-if (require_once "../classes/Lutador.php") {
-    echo "Lutador acessado!";
-} else {
-    echo "Erro ao acessar o lutador";
-}
+require_once "../classes/Lutador.php";
 
 class Luta {
     # Atributos
@@ -66,16 +62,22 @@ class Luta {
                     echo "Empatou!";
                     $this->desafiado->empatarLuta();
                     $this->desafiante->empatarLuta();
+                    $this->desafiado->apresentar();
+                    $this->desafiante->apresentar();
                     break;
                 case 1: // Desafiado ganha luta (Lutador1)
                     echo $this->desafiado->getNome()." ganhou a luta!";
                     $this->desafiado->ganharLuta();
                     $this->desafiante->perderLuta();
+                    $this->desafiado->apresentar();
+                    $this->desafiante->apresentar();
                     break;
                 case 2: // Desafiante ganha luta (Lutador2)
                     echo $this->desafiante->getNome()." ganhou a luta!";
                     $this->desafiante->ganharLuta();
                     $this->desafiado->perderLuta();
+                    $this->desafiado->apresentar();
+                    $this->desafiante->apresentar();
                     break;
                 }
         } else {
