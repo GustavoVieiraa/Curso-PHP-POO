@@ -1,7 +1,7 @@
 <?php
 
 
-class PessoaPadrao {
+    abstract class PessoaPadrao {
     // atributos
     private $nome;
     private $idade;

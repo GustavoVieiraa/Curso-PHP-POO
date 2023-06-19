@@ -19,6 +19,12 @@
             $this->setIdade($this->getIdade()+1);            
         }
 
+        public function apresentar() {
+            echo "<hr>nome: ".$this->getNome();
+            echo "<br>idade: ".$this->getIdade();
+            echo "<br>sexo: ".$this->getSexo();
+        }
+
         // Metodos especiais
         // nome
         public function getNome() {

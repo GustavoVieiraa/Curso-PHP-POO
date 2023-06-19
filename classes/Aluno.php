@@ -16,6 +16,10 @@ class Aluno extends PessoaPadrao {
         echo "Curso: ".$this->getCurso()."<br>";
     }
 
+    public function pagarMensalidade() {
+        echo "Pagando mensalidade do aluno: ".$this->getNome();
+    }
+
     public function cancelarMatricula() {
         if ($this->matricula) {
             $this->setMatricula(false);
